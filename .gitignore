@@ -2,12 +2,13 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+password.py
 # C extensions
 *.so
 .DS_Store
 # Distribution / packaging
 .Python
+
 build/
 develop-eggs/
 dist/
