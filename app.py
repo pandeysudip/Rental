@@ -41,6 +41,14 @@ def figure():
     return render_template('plots.html')
 
 
+@app.route('/model.html')
+def model():
+    # Store the entire collection as a list
+
+    # Return the template
+    return render_template('model.html')
+
+
 @app.route('/maps.html')
 def plot():
     # Store the entire collection as a list
