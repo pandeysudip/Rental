@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+a {
+  color: blue;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+}
+
+#back4 {
+  background: url('../Images/rent1.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#back5 {
+  background: url('../Images/rent3.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+footer {
+  margin: 0em;
+  padding: 1.2em;
+  background: black;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
