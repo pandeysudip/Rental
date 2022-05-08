@@ -22,6 +22,6 @@ def loading_model(variables):
         trained_model = joblib.load('model.pkl')
         prediction = trained_model.predict(test_data)
         if prediction == [1]:
-            return "Based on your input- 'Tenants is good renters' "
+            return "Based on your input- 'Tenants is good renter' "
         else:
             return "Based on your input- 'Tenants is high risk'"
