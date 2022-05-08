@@ -64,7 +64,7 @@
             <div class= "bg-black" >
                 <div class= "  text-warning p-3">
                     <h4>
-                        Please enter the following information to predict wheather the tenant is good renter or not.
+                        Please enter the following information to predict wheather the tenant is good renters or not.
                     </h4>
                 </div>
                 <div class='p-3'>
@@ -74,21 +74,24 @@
                         </h2>
                     </div>
                 <form action = "/send" method = "post">
-                    <div class="mb-3  lead text-primary">
-                        <label  for="Monthly Owner Cost">Age</label>
+                    <div class="mb-3  lead text-white">
+                        <label  for="Age">Age</label>
                         <input  type="number" step="any" name="Age" id="Age" />                
                     </div>
-                    <div class="mb-3  lead text-primary">
-                        <label  for="Per Capita Income">Rent_Amount</label>
+                    <div class="mb-3  lead text-white">
+                        <label  for="Rent_Amount">Rent_Amount</label>
                         <input  type="number" step="any" name="Rent_Amount" id="Rent_Amount" />  
                     </div>
-                    <div class="mb-3  lead text-primary">
-                        <label  for="Lng">Payment_Amount</label>
+                    <div class="mb-3  lead text-white">
+                        <label  for="Payment_Amount">Payment_Amount</label>
                         <input  type="number" step="any" name="Payment_Amount" id="Payment_Amount" />
                     </div>
-                    <div class="mb-3  lead text-primary">
-                        <label  for="Household Income">Payment_Date</label>
-                        <input  type="number" step="any" name="Payment_Date" id="Payment_Date" /> 
+                    <div class="mb-3  lead text-white">
+                        <label  for="Payment_Date">Payment_Date</label>
+                        <select id="Payment_Date" name="Payment_Date">
+                            <option value=1>Before 10th of month</option>
+                            <option value=2>After 10th of month</option>
+                        </select>  
                     </div>
                 
                 </div>
