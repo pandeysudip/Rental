@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template, redirect, jsonify
 import json
 import os
-from model_param import model_load
+from model_param import loading_model
 from bson import json_util
 from pymongo import MongoClient
 from flask_pymongo import PyMongo
@@ -10,6 +10,7 @@ from flask_pymongo import PyMongo
 app = Flask(__name__)
 
 # Use PyMongo to establish Mongo connection
+#
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI', '')
 app.config['MONG_DBNAME'] = 'ca_rent'
 mongo = PyMongo(app)
@@ -32,12 +33,12 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/dashboard.html')
+@app.route('/plots.html')
 def figure():
     # Store the entire collection as a list
 
     # Return the template
-    return render_template('dashboard.html')
+    return render_template('plots.html')
 
 
 @app.route('/maps.html')
@@ -52,6 +53,23 @@ def plot():
 def contact():
     # Return the template
     return render_template('contact.html')
+
+
+@app.route('/send', methods=["GET", "POST"])
+def predic():
+    if request.method == "POST":
+
+        Age = request.form.get('Age')
+        Rent_Amount = request.form.get("Rent_Amount")
+        Payment_Amount = request.form.get('Payment_Amount')
+        Payment_Date = request.form.get('Payment_Date')
+        variables = [Age, Rent_Amount,
+                     Payment_Amount, Payment_Date]
+        predict = loading_model(variables)
+
+        return render_template("index.html", pred=variables, prediction=predict)
+    else:
+        return render_template("index.html")
 
 
 @app.route('/data.html')
