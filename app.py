@@ -44,7 +44,6 @@ def figure():
 @app.route('/model.html')
 def model():
     # Store the entire collection as a list
-
     # Return the template
     return render_template('model.html')
 
@@ -52,7 +51,6 @@ def model():
 @app.route('/maps.html')
 def plot():
     # Store the entire collection as a list
-
     # Return the template
     return render_template('maps.html')
 
@@ -66,7 +64,6 @@ def contact():
 @app.route('/send', methods=["GET", "POST"])
 def predic():
     if request.method == "POST":
-
         Age = request.form.get('Age')
         Rent_Amount = request.form.get("Rent_Amount")
         Payment_Amount = request.form.get('Payment_Amount')
@@ -74,7 +71,6 @@ def predic():
         variables = [Age, Rent_Amount,
                      Payment_Amount, Payment_Date]
         predict = loading_model(variables)
-
         return render_template("index.html", pred=variables, prediction=predict)
     else:
         return render_template("index.html")
