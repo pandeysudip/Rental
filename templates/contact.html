@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!--Home-->
+        <div id="tal" class="bg-warning text-black p-5 text-center text-sm-start">
+            <div class=" text-center pt-5">
+                <h3>For more information and suggestion please contact me.</h3>
+                <h4>Your suggestion will be really appreciated.</h4>
+                <h2>For more similar projects please look at my <a href="https://pandeysudip.github.io/web/index.html" target="_blank">website</a></h2>
+            </div>
+        </div>  
+        <section id="con" class="bg-dark text-light p-5 text-center text-sm-start">
+                <div class="d-lg-flex">
+                    <!-- Wrapper container -->
+                    <div class="container ">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                            <label class="form-label" for="name">Name</label>
+                            <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                            </div>
+                            <div class="mb-3">
+                            <label class="form-label" for="emailAddress">Email Address</label>
+                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+                            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                            </div>
+
+                            <!-- Message input -->
+                            <div class="mb-3">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                            </div>
+
+                            <!-- Form submissions success message -->
+                            <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">Form submission successful!</div>
+                            </div>
+
+                            <!-- Form submissions error message -->
+                            <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                            </div>
+
+                            <!-- Form submit button -->
+                            <div class="d-grid">
+                            <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                            </div>
+                        </form>
+                        <div class="px-5 py-1">
+                            <p>Phone:618-303-8327 </p>
+                            <p>Email:physpandey@gmail.com </p>
+                            <p>9500 Gilman Drive, La Jolla CA 92093</p>
+                        </div>
+                    </div>
+                    <div class="contact-right py-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.6845447233245!2d-117.23620754904172!3d32.88006488593726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc06c4414caf4f%3A0xefb6aafc89913ea7!2sUniversity%20of%20California%20San%20Diego!5e0!3m2!1sen!2sus!4v1622840163489!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright &copy; pandeysudip2022</p>
+        </footer>
+   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{% endblock %}
