@@ -6,7 +6,7 @@ In this project, studied the monthly rental payment information and built a mach
 ## Background
 Used the dataset that contains monthly rental information like rent amount, payment amount, age, payment date and other information and build the machine learning models. Created a web application for house owners to mimimize their risk factor while renting the property using the monthly rental information data. House owners also can click their zipcode to see the average monthly rent rate in that area. 
 
-## Resoruces
+## Resources
 * Monthly rental payment information for a set of renters in San Diego, CA.
 
 ## Data cleaning
