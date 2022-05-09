@@ -42,19 +42,18 @@ In the original dataset, only 12% of data are categorized as high risk. To get a
 Differnt plots were generated to understand the data.
 Some of the questions tried to answer from the dataset are:
 1. Can one person live in more than one address?
-Ans: 207 people have multiple address with Adaline Santos with 4 different address (Identified using both name and date of birth)
-![Images6.png](Images/fig1.png)
+* Ans: 207 people have multiple address with Adaline Santos with 4 different address (Identified using both name and date of birth)
 
 2. Can one address have more than one person.
-Ans: In one address, there is no more than one person information.
+* Ans: In one address, there is no more than one person information.
 ![Images6.png](Images/fig22.png)
 
 3. Can one address have different amount of rent? Payment?
-Ans: One address has only one rent amount but one address can have differnt payment amount with 6 address have 14 differnt payment amount.
+* Ans: One address has only one rent amount but one address can have differnt payment amount with 6 address have 14 differnt payment amount.
 ![Images6.png](Images/fig33.png)
 
 4. Plot to check whether the hypothesis tenant’s age is related to the rent they pay seems right?
-Ans: From the graph, one can see that there is no lrelationship between age and rent amount and payment amount.
+* Ans: From the graph, one can see that there is no relationship between age and rent amount and payment amount.
 As the curve looks relatively constant with up and down in some age.
 ![Images6.png](Images/fig4.png)
 
@@ -62,17 +61,17 @@ As the curve looks relatively constant with up and down in some age.
 ![Images6.png](Images/fig5.png)
 
 6. Hypothesis testing on tenant’s age is related to the rent they pay?
-a.First defining the null and alternative hypothesis
+* a.First defining the null and alternative hypothesis
 
-Alternate hypothesis - Tenant’s age is not related to the rent they pay.
+* Alternate hypothesis - Tenant’s age is not related to the rent they pay.
 
-Null Hypothesis - Tenant’s age is related to the rent they pay.
-b.Setting the level of significance (alpha) to 0.05.
-c. Obtaining the p-value using Independent T-Tests
-d.p-value less or equal to 0.05: Indicates strong evidence against the null hypothesis. So rejecting the null hypothesis.
+* Null Hypothesis - Tenant’s age is related to the rent they pay.
+* b.Setting the level of significance (alpha) to 0.05.
+* c. Obtaining the p-value using Independent T-Tests
+* d.p-value less or equal to 0.05: Indicates strong evidence against the null hypothesis. So rejecting the null hypothesis.
 
 7. Payment amount always the same as the rent amount?
-Ans: The payment amount is differnt then the rent amount for some cases.
+* Ans: The payment amount is differnt then the rent amount for some cases.
 ![Images6.png](Images/fig6.png)
 
 8. How many different situations are there if the payment is different?
@@ -84,11 +83,8 @@ d. Actual payment amount
 
 9.Other visulization
 ![Images6.png](Images/fig7.png)
-![Images6.png](Images/fig8.png)
 ![Images6.png](Images/fig9.png)
-![Images6.png](Images/fig10.png)
-![Images6.png](Images/fig11.png)
-![Images6.png](Images/fig12.png)
+
 ## Preprocessing: 
 ### Scaling the data
 Used `StandardScaler` to scale the training and testing sets. 
