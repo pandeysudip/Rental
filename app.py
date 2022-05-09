@@ -18,7 +18,7 @@ mongo = PyMongo(app)
 # Creating collection
 rent = mongo.db['rent']
 
-# Defining route
+# Defining routes
 
 
 @app.route('/')
