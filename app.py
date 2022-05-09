@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template, redirect, jsonify
 import json
 import os
-from model_param import loading_model
+import model_param
 from bson import json_util
 from pymongo import MongoClient
 from flask_pymongo import PyMongo
@@ -61,7 +61,7 @@ def contact():
     return render_template('contact.html')
 
 
-@app.route('/send', methods=["GET", "POST"])
+@app.route('/rent', methods=["GET", "POST"])
 def predic():
     if request.method == "POST":
         Age = request.form.get('Age')
@@ -70,7 +70,7 @@ def predic():
         Payment_Date = request.form.get('Payment_Date')
         variables = [Age, Rent_Amount,
                      Payment_Amount, Payment_Date]
-        predict = loading_model(variables)
+        predict = model_param.loading_model(variables)
         return render_template("index.html", pred=variables, prediction=predict)
     else:
         return render_template("index.html")
