@@ -115,11 +115,6 @@ Different models are built using:
 * `Grid Search CV`
 * `Randomized Search CV`
 
-## Comparision of real and predicted value using sample test set
-
-![Images/landingResize.png](Images/comp1.png)
-
-
 ## Productionization
 Different languages and tools were used to build the machichine learning web app.
 * `HTML`
