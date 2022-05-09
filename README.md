@@ -9,12 +9,47 @@ Used the dataset that contains monthly rental information like rent amount, paym
 ## Resoruces
 * Monthly rental payment information for a set of renters in San Diego, CA.
 
+## Data cleaning
+Different preprocess steps were used to extract the best features. 
+Following changes were made using pandas to clean the data:
+
+* Some rows are shifted one column up, correcting this error using shift method
+* Converted columns to appropriate datatypes
+* Added `age` columns using date of birth columns
+* Replaced Nan with 0
+* Convert `paymentDate` columns to 1 or 0 based on the payment date: Before or After 10th of month.
+* Added a new target column `status` based on the payment amount and rent amount (high risk, low risk)
+* Used `SearchEngine` module to add differnt new features using zipcode:
+`city`
+`county`
+`lattitude`
+`longitude`
+`medianIncome`
+`population`
+`state`
+`housingUnits`
+`occupiedHousingUnits`
+But the data is from one city,county,and state, so this colums were removed later
+* Created  and saved under-sampling data for modeling
+* Created  and saved over-sampling data for modeling
+
+## Under sampling and over sampling technique
+In the original dataset, only 12% of data are categorized as high risk. To get a truly accurate model, special techniques were used on imbalanced data.
+1. Under Sampling: These data have been undersampled to give an even number of high risk and low risk tenant's using undersampling techniques.   
+2. over Sampling: Oversampling a technique is  used to give an even number of high risk and low risk tenant's. 
+
+## Data visulization
+
+
 ## Preprocessing: 
 ### Scaling the data
 Used `StandardScaler` to scale the training and testing sets. 
 ### Converting categorical data to numeric
 * Used `pd.get_dummies()` to convert the House Zipcode  data to numeric. 
 * Used scikit-learn label encoder to for target vector
+
+### Spliting the data into training set and testing set
+*Used `traintestsplit` to split the data into training set and testing set. 80 % data is used for training set and 20 % used for testing set.
 
 ## Model Building
 Created different classification models to predict patient’s risk of developing lung cancer. Different models are:
@@ -44,8 +79,13 @@ Different languages and tools were used to build the machichine learning web app
 * `Git`
 * `Flask`
 * `Heroku`
-The machine learning model are saved as a pickle file to used for the prediction.
-Used `Flask` servers to interact with our `Machine Learning model` and then connect the model with a web application. Deployed the flask machine learning web-app in Heroku Cloud Platform.
+
+* Stroed the data in MongoDB database using pymongo. 
+* Created a intrecative webpage using HTML, CSS, javascript,and Bootstrap.
+* Used MongoDB with Flask templating to create a new HTML page that displays all of the information.
+* Created a different  routes  that query Mongo database and pass the data into an HTML template to display the data.
+* The machine learning model are saved as a pickle file to used for the prediction.
+* Used `Flask` servers to interact with our `Machine Learning model` and then connect the model with a web application. Deployed the flask machine learning web-app in Heroku Cloud Platform.
 
  The website has a differnt pages:
 * `Home` User can enter the information to predict the tenant's risk factor.
