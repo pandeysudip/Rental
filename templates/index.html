@@ -3,13 +3,13 @@
 <!--Home-->
 <div id="back4" class="p-5">
     <div class=" mt-5 container">
-        <h1 class=" pt-5 mt-5 text-primary text-center">Welcome to Rental Website</h1>
+        <h1 class=" p-3 m-5 text-primary bg-black text-center">Welcome to Rental Website</h1>
         <h3 class=" text-center"></h3>
     </div>
-    <div class=" m-5 p-5">
-        <h2 class=" text-center">A Tool for Rental Owner for Minimizing the Risk Factor While Renting.</h2>
+    <div class=" m-5 p-5 ">
+        <h2 class=" text-center ">A Tool for Rental Owner for Minimizing the Risk Factor While Renting.</h2>
     </div>
-    <div class=" m-5 p-5">
+    <div class=" m-5 p-5 ">
         <h1 class=" p-5  text-success text-center"></h1>
         <p class="text-dark lead  pt-5">
             When a tenant refuses to pay rent, this may threatens the safety of your investment.
@@ -18,19 +18,19 @@
             Why taking risk, predict within a second whether the tenant is a good renter or not.
         </p>
         <p class="text-success lead  ">
-            Our motto is to keep you financial and mentally strong.
+            Our motto is to keep you financially and mentally strong.
         </p>
     </div>
 </div>
 <section id="tal" class="bg-dark text-light p-1 mt-5 text-center text-sm-start">
     <div class="row bg-white p-3 ">
         <div class="col-md-7 p-3 bg-warning">
-              <h3 class="text-primary pt-5 ">
+              <h3 class="text-white p-3 bg-black">
                 This tool is designed for Rental Owners to predict whether the consumer is good renters or not. </h3>
-                <div class="text-black p-5">
+                <div class="text-danger p-5">
                 <h4>
                     Finding a good tenant is a difficult task.
-                Our model is used to predict  whether a  tenant would be low or high risk to rent the property. Enter all the tenant information and our artifical intelligance will predict the risk level.
+                Our model is used to predict  whether a  tenant would be low or high risk to rent the property. Enter all the tenant information  and press submit, our artifical intelligance will predict the risk level.
                 </h4>
             </div>
         </div>
@@ -40,7 +40,7 @@
     </div>
     <div class="card bg-success text-white mt-5 p-5">
         <div class="well ">
-            <h4 class="text-white">Please select the zipcode to see the Rent Rate of that city. This help you to keep your rent with the market</h4>
+            <h4 class="text-white">Please select the zipcode to see the average rent rate of that area. This help you to keep your rent with the market.</h4>
             <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
     </div>
@@ -76,7 +76,7 @@
                             <a href="index.html" class="nav-link lead text-white">Please click to refresh</a>
                         </h2>
                     </div>
-                <form action = "/send" method = "post">
+                <form action = "/rent" method = "post">
                     <div class="mb-3  lead text-white">
                         <label  for="Age">Age</label>
                         <input  type="number" step="any" name="Age" id="Age" />                
@@ -93,11 +93,10 @@
                         <label  for="Payment_Date">Payment_Date</label>
                         <select id="Payment_Date" name="Payment_Date">
                             <option value=1>Before 10th of month</option>
-                            <option value=2>After 10th of month</option>
+                            <option value=0>After 10th of month</option>
                         </select>  
                     </div>
                 
-                </div>
                     <!-- Form submit button -->
                     <div class="d-grid ">
                         <button class="btn btn-primary btn-lg" type="submit" value="submit">Submit</button>
@@ -108,6 +107,7 @@
         <div class="container p-5 ">
             <h3 class='p-4 text-center'> {{ prediction }}</h3> 
         </div>  
+    </div>
     </section>
 </section>
 <div class='bg-warning p-3'>

@@ -4,15 +4,16 @@
 <section id="tal" class="bg-dark text-light  text-center text-sm-start">
     <div class="row">
         <div class=" bg-warning  mt-5 p-5">
-        <h1 class="text-white text-center">Performances Measures</h1>
+        <h1 class="text-primary text-center p-3">Performances Metrics</h1>
         <p class="text-black">In the original dataset, only 10% of tenants are at high risk. To get a truly accurate model, special techniques were used on imbalanced data.</p>
             <li class="text-black">
               Many differnt columns like Lattitude, Longitude, City, County, State, Median Income, Housing units were added using the zipcode. 
             </li>
             <li class="text-black"> Undersampling: These data have been undersampled to give an even number of positive and negative class using undersampling techniques.</li>
             <li class="text-black"> Oversampling: Oversampling and SMOTE (Synthetic Minority Over-sampling ) technique is used to give an even number of positive and negative class.</li>
-            <p class="text-black"> Below are the performances measures of oversampling dataset.</p>
+            <h3 class="text-black p-3"> Below are the performances measures of oversampling dataset.</h3>
         </div>
+        
     </div>
     <div class="sidebar">
         <div class="d-lg-flex">
@@ -24,80 +25,80 @@
                     
                     <div class="container">
                         <table class="table table-striped table table-bordered table-dark">
-                            <thead>
-                                <tr style="text-align: right;">
-                                  <th></th>
-                                  <th>SGD</th>
-                                  <th>logistic Reg</th>
-                                  <th>SVC</th>
-                                  <th>Decision Tree</th>
-                                  <th>Random Forest</th>
-                                  <th>Extra Random Tree</th>
-                                  <th>AdaBoost</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th>train score</th>
-                                  <td>0.808866</td>
-                                  <td>0.820828</td>
-                                  <td>0.829655</td>
-                                  <td>1.000000</td>
-                                  <td>0.950297</td>
-                                  <td>0.888633</td>
-                                  <td>1.000000</td>
-                                </tr>
-                                <tr>
-                                  <th>test score</th>
-                                  <td>0.796392</td>
-                                  <td>0.803493</td>
-                                  <td>0.819804</td>
-                                  <td>0.950681</td>
-                                  <td>0.924199</td>
-                                  <td>0.847246</td>
-                                  <td>0.943005</td>
-                                </tr>
-                                <tr>
-                                  <th>precision_score</th>
-                                  <td>0.834071</td>
-                                  <td>0.822695</td>
-                                  <td>0.842282</td>
-                                  <td>0.912037</td>
-                                  <td>0.893917</td>
-                                  <td>0.813493</td>
-                                  <td>0.902335</td>
-                                </tr>
-                                <tr>
-                                  <th>recall_score</th>
-                                  <td>0.733178</td>
-                                  <td>0.767017</td>
-                                  <td>0.781019</td>
-                                  <td>0.996110</td>
-                                  <td>0.960327</td>
-                                  <td>0.895760</td>
-                                  <td>0.991832</td>
-                                </tr>
-                                <tr>
-                                  <th>f1_score</th>
-                                  <td>0.780377</td>
-                                  <td>0.793881</td>
-                                  <td>0.810494</td>
-                                  <td>0.952222</td>
-                                  <td>0.925933</td>
-                                  <td>0.852647</td>
-                                  <td>0.944969</td>
-                                </tr>
-                                <tr>
-                                  <th>auc</th>
-                                  <td>0.894501</td>
-                                  <td>0.900322</td>
-                                  <td>0.907073</td>
-                                  <td>0.951275</td>
-                                  <td>0.977163</td>
-                                  <td>0.934809</td>
-                                  <td>0.943643</td>
-                                </tr>
-                              </tbody>
+                          <thead>
+                            <tr style="text-align: right;">
+                              <th></th>
+                              <th>SGD</th>
+                              <th>logistic Reg</th>
+                              <th>Decision Tree</th>
+                              <th>Random Forest</th>
+                              <th>Extra Random Tree</th>
+                              <th>Ada Boost</th>
+                              <th>Graident Boost</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>Train score</th>
+                              <td>0.808771</td>
+                              <td>0.808771</td>
+                              <td>1.000000</td>
+                              <td>0.998505</td>
+                              <td>0.995611</td>
+                              <td>1.0</td>
+                              <td>0.991922</td>
+                            </tr>
+                            <tr>
+                              <th>Test score</th>
+                              <td>0.811296</td>
+                              <td>0.811296</td>
+                              <td>0.999809</td>
+                              <td>0.997997</td>
+                              <td>0.994848</td>
+                              <td>1.0</td>
+                              <td>0.992654</td>
+                            </tr>
+                            <tr>
+                              <th>Precision</th>
+                              <td>0.729047</td>
+                              <td>0.729047</td>
+                              <td>1.000000</td>
+                              <td>0.997332</td>
+                              <td>0.991472</td>
+                              <td>1.0</td>
+                              <td>0.985521</td>
+                            </tr>
+                            <tr>
+                              <th>Recall</th>
+                              <td>0.990841</td>
+                              <td>0.990841</td>
+                              <td>0.999618</td>
+                              <td>0.998664</td>
+                              <td>0.998283</td>
+                              <td>1.0</td>
+                              <td>1.000000</td>
+                            </tr>
+                            <tr>
+                              <th>f1_score</th>
+                              <td>0.840019</td>
+                              <td>0.840019</td>
+                              <td>0.999809</td>
+                              <td>0.997998</td>
+                              <td>0.994866</td>
+                              <td>1.0</td>
+                              <td>0.992708</td>
+                            </tr>
+                            <tr>
+                              <th>auc</th>
+                              <td>0.797657</td>
+                              <td>0.797657</td>
+                              <td>0.999809</td>
+                              <td>0.999969</td>
+                              <td>0.999860</td>
+                              <td>1.0</td>
+                              <td>0.999998</td>
+                            </tr>
+                          </tbody>
                             </table>
                     </div>
                     
@@ -114,79 +115,79 @@
                     
                     <div class="container">
                         <table class="table table-striped table table-bordered table-dark">
-                            <thead>
-                                <tr style="text-align: right;">
-                                  <th></th>
-                                  <th>SGD</th>
-                                  <th>Logistic Reg</th>
-                                  <th>SVC</th>
-                                  <th>Decision Tree</th>
-                                  <th>Random Forest</th>
-                                  <th>Extra Random Tree</th>
-                                  <th>AdaBoost</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th>train score</th>
-                                  <td>0.797345</td>
-                                  <td>0.820056</td>
-                                  <td>0.828092</td>
-                                  <td>0.641160</td>
-                                  <td>0.915793</td>
-                                  <td>0.815164</td>
-                                  <td>1.000000</td>
-                                </tr>
-                                <tr>
-                                  <th>test score</th>
-                                  <td>0.799790</td>
-                                  <td>0.822851</td>
-                                  <td>0.828092</td>
-                                  <td>0.622642</td>
-                                  <td>0.850105</td>
-                                  <td>0.766247</td>
-                                  <td>0.797694</td>
-                                </tr>
-                                <tr>
-                                  <th>precision_score</th>
-                                  <td>0.761905</td>
-                                  <td>0.839817</td>
-                                  <td>0.846330</td>
-                                  <td>0.584665</td>
-                                  <td>0.844350</td>
-                                  <td>0.728814</td>
-                                  <td>0.798687</td>
-                                </tr>
-                                <tr>
-                                  <th>recall_score</th>
-                                  <td>0.858369</td>
-                                  <td>0.787554</td>
-                                  <td>0.791845</td>
-                                  <td>0.785408</td>
-                                  <td>0.849785</td>
-                                  <td>0.830472</td>
-                                  <td>0.783262</td>
-                                </tr>
-                                <tr>
-                                  <th>f1_score</th>
-                                  <td>0.807265</td>
-                                  <td>0.812846</td>
-                                  <td>0.818182</td>
-                                  <td>0.670330</td>
-                                  <td>0.847059</td>
-                                  <td>0.776329</td>
-                                  <td>0.790899</td>
-                                </tr>
-                                <tr>
-                                  <th>auc</th>
-                                  <td>0.881174</td>
-                                  <td>0.901771</td>
-                                  <td>0.907549</td>
-                                  <td>0.654739</td>
-                                  <td>0.922958</td>
-                                  <td>0.855080</td>
-                                  <td>0.797369</td>
-                                </tr>
+                          <thead>
+                            <tr style="text-align: right;">
+                              <th></th>
+                              <th>SGD</th>
+                              <th>logistic Reg</th>
+                              <th>Decision Tree</th>
+                              <th>Random Forest</th>
+                              <th>Extra Random Tree</th>
+                              <th>Ada Boost</th>
+                              <th>Graident Boost</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>Train score</th>
+                              <td>0.790606</td>
+                              <td>0.801605</td>
+                              <td>1.000000</td>
+                              <td>1.0</td>
+                              <td>0.993129</td>
+                              <td>1.0</td>
+                              <td>0.992821</td>
+                            </tr>
+                            <tr>
+                              <th>Test score</th>
+                              <td>0.788802</td>
+                              <td>0.804799</td>
+                              <td>0.999615</td>
+                              <td>1.0</td>
+                              <td>0.991155</td>
+                              <td>1.0</td>
+                              <td>0.993078</td>
+                            </tr>
+                            <tr>
+                              <th>Precision</th>
+                              <td>0.716298</td>
+                              <td>0.725530</td>
+                              <td>1.000000</td>
+                              <td>1.0</td>
+                              <td>0.987785</td>
+                              <td>1.0</td>
+                              <td>0.986515</td>
+                            </tr>
+                            <tr>
+                              <th>Recall</th>
+                              <td>0.965219</td>
+                              <td>0.988457</td>
+                              <td>0.999241</td>
+                              <td>1.0</td>
+                              <td>0.994836</td>
+                              <td>1.0</td>
+                              <td>1.000000</td>
+                            </tr>
+                            <tr>
+                              <th>f1_score</th>
+                              <td>0.822334</td>
+                              <td>0.836827</td>
+                              <td>0.999620</td>
+                              <td>1.0</td>
+                              <td>0.991298</td>
+                              <td>1.0</td>
+                              <td>0.993212</td>
+                            </tr>
+                            <tr>
+                              <th>auc</th>
+                              <td>0.821261</td>
+                              <td>0.847017</td>
+                              <td>0.999620</td>
+                              <td>1.0</td>
+                              <td>0.999704</td>
+                              <td>1.0</td>
+                              <td>0.999993</td>
+                            </tr>
                               </tbody>
                             </table>
                     </div>
@@ -198,760 +199,958 @@
 <div class="p-2">
     <div class="bg-black">
         <h2 class=" p-5 text-warning text-center">Prediction on the Test set using Different Learning Algorithms</h2>
-        <h4 class=" p-1 text-warning text-center">Data contain the additional features</h4>
+        <h4 class=" p-1 text-warning text-center">Data contains the additional features than original dataset.</h4>
     </div>
     <table class="table table-striped table table-bordered table-dark">
-        <thead>
-            <tr style="text-align: right;">
-              <th></th>
-              <th>Real value</th>
-              <th>SGD Classifier</th>
-              <th>Logistic Regression</th>
-              <th>SVC</th>
-              <th>Decision Tree</th>
-              <th>Random Forest</th>
-              <th>Extra Random Tree</th>
-              <th>AdaBoost</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>0</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>1</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>2</th>
-              <td>True</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>3</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>4</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>5</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>6</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>7</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>8</th>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>9</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>10</th>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>11</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>12</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>13</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>14</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>15</th>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>16</th>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>17</th>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>18</th>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>19</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>20</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>21</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>22</th>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>23</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>24</th>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>25</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>26</th>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>27</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>28</th>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>29</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>30</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>31</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>32</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>33</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>34</th>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>35</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>36</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>37</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>38</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>39</th>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>40</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>41</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>42</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>43</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>44</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>45</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>46</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>47</th>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>48</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>49</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>50</th>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>51</th>
-              <td>False</td>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>52</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>53</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>54</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>55</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>56</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>57</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>58</th>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>59</th>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>60</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>61</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>62</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>63</th>
-              <td>False</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>64</th>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-              <td>True</td>
-            </tr>
-            <tr>
-              <th>65</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
-            <tr>
-              <th>66</th>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-              <td>False</td>
-            </tr>
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>Real value</th>
+          <th>SGD Classifier</th>
+          <th>Logistic Regression</th>
+          <th>Decision Tree</th>
+          <th>Random Forest</th>
+          <th>Extra Random Tree</th>
+          <th>AdaBoost</th>
+          <th>Gradient Boost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>0</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>9</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>10</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>11</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>12</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>13</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>14</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>15</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>16</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>17</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>18</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>19</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>20</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>21</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>22</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>23</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>24</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>25</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>26</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>27</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>28</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>29</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>30</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>31</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>32</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>33</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>34</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>35</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>36</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>37</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>38</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>39</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>40</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>41</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>42</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>43</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>44</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>45</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>46</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>47</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>48</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>49</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>50</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>51</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>52</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>53</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>54</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>55</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>56</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>57</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>58</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>59</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>60</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>61</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>62</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>63</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>64</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>65</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>66</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>67</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>68</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>69</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>70</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>71</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>72</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>73</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>74</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>75</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>76</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>77</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>78</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>79</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>80</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>81</th>
+          <td>high risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>82</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
+        <tr>
+          <th>83</th>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+          <td>high risk</td>
+        </tr>
+        <tr>
+          <th>84</th>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+          <td>low risk</td>
+        </tr>
         </tbody>
     </table>
 </div>
