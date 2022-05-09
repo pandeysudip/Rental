@@ -33,13 +33,62 @@ But the data is from one city,county,and state, so this colums were removed late
 * Created  and saved under-sampling data for modeling
 * Created  and saved over-sampling data for modeling
 
-## Under sampling and over sampling technique
+### Under sampling and over sampling technique
 In the original dataset, only 12% of data are categorized as high risk. To get a truly accurate model, special techniques were used on imbalanced data.
 1. Under Sampling: These data have been undersampled to give an even number of high risk and low risk tenant's using undersampling techniques.   
 2. over Sampling: Oversampling a technique is  used to give an even number of high risk and low risk tenant's. 
 
 ## Data visulization
+Differnt plots were generated to understand the data.
+Some of the questions tried to answer from the dataset are:
+1. Can one person live in more than one address?
+Ans: 207 people have multiple address with Adaline Santos with 4 different address (Identified using both name and date of birth)
+![Images6.png](Images/hero1.png)
 
+2. Can one address have more than one person.
+Ans: In one address, there is no more than one person information.
+![Images6.png](Images/hero1.png)
+
+3. Can one address have different amount of rent? Payment?
+Ans: One address has only one rent amount but one address can have differnt payment amount with 6 address have 14 differnt payment amount.
+![Images6.png](Images/hero1.png)
+
+4. Plot to check whether the hypothesis tenant’s age is related to the rent they pay seems right?
+Ans: From the graph, one can see that there is no lrelationship between age and rent amount and payment amount.
+As the curve looks relatively constant with up and down in some age.
+![Images6.png](Images/hero1.png)
+
+5. Correlation plots
+![Images6.png](Images/hero1.png)
+
+6. Hypothesis testing on tenant’s age is related to the rent they pay?
+A. First defining the null and alternative hypothesis
+
+Alternate hypothesis - Tenant’s age is not related to the rent they pay.
+
+Null Hypothesis - Tenant’s age is related to the rent they pay.
+B. Setting the level of significance (alpha) to 0.05.
+C. Obtaining the p-value using Independent T-Tests
+
+p-value less or equal to 0.05: Indicates strong evidence against the null hypothesis. So rejecting the null hypothesis.
+
+7. Payment amount always the same as the rent amount?
+Ans: The payment amount is differnt then the rent amount for some cases.
+![Images6.png](Images/hero1.png)
+
+8. How many different situations are there if the payment is different?
+As we can see there are four different situations if payment amount and rent amount is differnt:
+a. No payment with empty payment amount section
+b. More payment amount then rent amount (Over due because the payment date is always after the 10th of the month in this case)
+c. Negative payment amount which can be due to balance left after rent payment
+d. Actual payment amount
+![Images6.png](Images/hero1.png)
+9.Other visulization
+![Images6.png](Images/hero1.png)
+![Images6.png](Images/hero1.png)
+![Images6.png](Images/hero1.png)
+![Images6.png](Images/hero1.png)
+![Images6.png](Images/hero1.png)
 
 ## Preprocessing: 
 ### Scaling the data
@@ -52,7 +101,12 @@ Used `StandardScaler` to scale the training and testing sets.
 *Used `traintestsplit` to split the data into training set and testing set. 80 % data is used for training set and 20 % used for testing set.
 
 ## Model Building
-Created different classification models to predict patient’s risk of developing lung cancer. Different models are:
+Created different classification models to predict patient’s risk of developing lung cancer.  Two different datasets were used to build the modls;
+### Model on dataset without any additinal features
+
+### Model on dataset with different additionl columns
+
+Different models are built using:
 * `Logistic Regression`
 * `Stochastic Gradient Descent Classifier`
 * `Decision Tree Classifier`
@@ -60,6 +114,7 @@ Created different classification models to predict patient’s risk of developin
 * `Extremely Random Trees`
 * `AdaBoost Classifier`
 * `Gradient Boosting Classifier`
+
 
 ## Tuning hyperparamaters for all model
 * `Grid Search CV`
